@@ -1,3 +1,4 @@
+import platform
 import subprocess
 import sys
 import os
@@ -8,19 +9,18 @@ print("#   Notch Hider by LR(yymin1022)   #")
 print("#                                  #")
 print("####################################")
 
-
-def resource_path(relative_path):
-    try:
-        base_path = sys._MEIPASS
-    except Exception:
-        base_path = os.path.abspath(".")
-
-    return os.path.join(base_path, relative_path)
+strOS = platform.system()
+if strOS == "Windows":
+    print("Current OS is Windows")
+    adb_path = os.path.join(sys._MEIPASS, "adb.exe")
+elif strOS == "Linux":
+    print("Current OS is Linux")
+    adb_path = os.path.join(sys._MEIPASS, "adb")
 
 while(True):
     print("Conntect Device with USB Debugging Enabled")
     input("/* Press Any Key to Continue */")
-    if "product" in str(subprocess.check_output([resource_path('bin/adb'), 'devices', '-l'])):
+    if "product" in str(subprocess.check_output([adb_path, 'devices', '-l'])):
         print("Device Found.\n")
         break
     else:
@@ -37,13 +37,13 @@ while(True):
         break
     else:
         try:
-            subprocess.check_output(['bin/adb', 'shell', 'wm', 'overscan', '0,0,0,0'])
+            subprocess.check_output([adb_path, 'shell', 'wm', 'overscan', '0,0,0,0'])
         except subprocess.CalledProcessError:
             print("Failed. Trying again.")
             failCount += 1
             continue
         print("Successfully applied. Device will be rebooted.")
-        subprocess.check_output(['bin/adb', 'reboot'])
+        subprocess.check_output([adb_path, 'reboot'])
         break
 
 

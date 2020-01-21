@@ -5,7 +5,7 @@ block_cipher = None
 
 a = Analysis(['main.py'],
              pathex=['/media/yong/Local Disk/AppProjects/NotchHider_Enabler'],
-             binaries=[],
+             binaries=[('bin/*', '.')],
              datas=[],
              hiddenimports=[],
              hookspath=[],
