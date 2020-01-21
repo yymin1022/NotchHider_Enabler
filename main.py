@@ -34,6 +34,23 @@ while(True):
         print("Device Not Found. Try Again.\n")
         continue
 
+while(True):
+    print("원하시는 항목의 숫자를 입력해주세요.")
+    print("Select what you want to do.")
+    print("1. 노치가리기 활성화 Enable Notch Hiding")
+    print("2. 노치가리기 비활성화(순정상태로 되돌리기) Disable Notch Hiding(Back to Stock)")
+    selectNum = input()
+    if selectNum == "1":
+        applyValue = "0,90,0,0"
+        break
+    elif selectNum == "2":
+        applyValue = "reset"
+        break
+    else:
+        print("잘못 선택하셨습니다. 다시시도해주세요.")
+        print("Something went wrong. Please try again.")
+        continue
+
 print("UI 조작 커맨드가 실행됩니다. 기기의 연결을 해제하지 말고 잠시만 기다려주세요.")
 print("Overscan Command will run. Please wait a moment, and DO NOT DISCONNECT DEVICE.\n")
 print("/* 계속하려면 아무키나 누르십시오. */")
@@ -47,7 +64,7 @@ while(True):
         break
     else:
         try:
-            subprocess.check_output([adb_path, 'shell', 'wm', 'overscan', '0,90,0,0'])
+            subprocess.check_output([adb_path, 'shell', 'wm', 'overscan', applyValue])
         except subprocess.CalledProcessError:
             print("작업에 실패하였습니다. 다시시도합니다.")
             print("Failed. Trying again.\n")
