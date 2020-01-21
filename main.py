@@ -1,4 +1,6 @@
 import subprocess
+import sys
+import os
 
 print("####################################")
 print("#                                  #")
@@ -6,10 +8,19 @@ print("#   Notch Hider by LR(yymin1022)   #")
 print("#                                  #")
 print("####################################")
 
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 while(True):
     print("Conntect Device with USB Debugging Enabled")
     input("/* Press Any Key to Continue */")
-    if "product" in str(subprocess.check_output(['bin/adb', 'devices', '-l'])):
+    if "product" in str(subprocess.check_output([resource_path('bin/adb'), 'devices', '-l'])):
         print("Device Found.\n")
         break
     else:
