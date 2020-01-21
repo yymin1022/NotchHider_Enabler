@@ -74,6 +74,7 @@ while(True):
         print("Successfully applied. Device will be rebooted.\n")
         subprocess.check_output([adb_path, 'reboot'])
         break
+subprocess.check_output([adb_path, 'kill-server'])
 
 print("/* 계속하려면 아무키나 누르십시오. */")
 input("/* Press any key to continue. */\n")
