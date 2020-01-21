@@ -3,28 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2cc2e86e-ef59-4e0e-b257-6e70c57f7b2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_bz2.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_codecs_cn.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_codecs_hk.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_codecs_iso2022.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_codecs_jp.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_codecs_kr.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_codecs_tw.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_hashlib.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_lzma.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_multibytecodec.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_opcode.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/_ssl.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/email/architecture.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/libpython3.7m.so.1.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/library.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/pydoc_data/_pydoc.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/readline.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/lib/termios.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/exe.linux-x86_64-3.7/main" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.spec" beforeDir="false" afterPath="$PROJECT_DIR$/main.spec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
