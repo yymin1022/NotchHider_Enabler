@@ -9,9 +9,8 @@ print("####################################")
 while(True):
     print("Conntect Device with USB Debugging Enabled")
     input("/* Press Any Key to Continue */")
-    if "product" in str(subprocess.check_output(['bin/adb.exe', 'devices', '-l'])):
-        print("Device Found")
-        input("/* Press Any Key to Continue */")
+    if "product" in str(subprocess.check_output(['bin/adb', 'devices', '-l'])):
+        print("Device Found.\n")
         break
     else:
         print("Device Not Found. Try Again.\n")
@@ -27,13 +26,13 @@ while(True):
         break
     else:
         try:
-            subprocess.check_output(['bin/adb.exe', 'shell', 'wm', 'overscan', '0,0,0,0'])
+            subprocess.check_output(['bin/adb', 'shell', 'wm', 'overscan', '0,0,0,0'])
         except subprocess.CalledProcessError:
             print("Failed. Trying again.")
             failCount += 1
             continue
         print("Successfully applied. Device will be rebooted.")
-        subprocess.check_output(['bin/adb.exe', 'reboot'])
+        subprocess.check_output(['bin/adb', 'reboot'])
         break
 
 
