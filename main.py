@@ -37,8 +37,8 @@ while(True):
 while(True):
     print("원하시는 항목의 숫자를 입력해주세요.")
     print("Select what you want to do.")
-    print("1. 노치가리기 활성화 Enable Notch Hiding")
-    print("2. 노치가리기 비활성화(순정상태로 되돌리기) Disable Notch Hiding(Back to Stock)")
+    print("1. 노치가리기 활성화\n   Enable Notch Hiding")
+    print("2. 노치가리기 비활성화(순정상태로 되돌리기)\n   Disable Notch Hiding(Back to Stock)")
     selectNum = input()
     if selectNum == "1":
         applyValue = "0,90,0,0"
