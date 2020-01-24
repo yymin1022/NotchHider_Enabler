@@ -42,9 +42,11 @@ while(True):
     selectNum = input()
     if selectNum == "1":
         applyValue = "0,90,0,0"
+        appCommand = [adb_path, 'install', os.path.join(sys._MEIPASS, "app.apk")]
         break
     elif selectNum == "2":
         applyValue = "reset"
+        appCommand = [adb_path, 'shell', 'pm', 'uninstall', 'com.yong.notchhider']
         break
     else:
         print("잘못 선택하셨습니다. 다시시도해주세요.")
@@ -65,6 +67,13 @@ while(True):
     else:
         try:
             subprocess.check_output([adb_path, 'shell', 'wm', 'overscan', applyValue])
+        except subprocess.CalledProcessError:
+            print("작업에 실패하였습니다. 다시시도합니다.")
+            print("Failed. Trying again.\n")
+            failCount += 1
+            continue
+        try:
+            subprocess.check_output(appCommand)
         except subprocess.CalledProcessError:
             print("작업에 실패하였습니다. 다시시도합니다.")
             print("Failed. Trying again.\n")
